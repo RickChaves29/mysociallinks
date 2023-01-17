@@ -1,68 +1,99 @@
 body {
+    font-family: 'Poppins';
     background-color: #E5E5E5;
+}
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #BB99DD;
 }
 
-#image-conteiner {
+main>#container-img {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.063rem;
+    gap: 1rem;
+}
+
+main>#container-img>div {
+    display: flex;
+    justify-content: center;
     padding: 6px;
-    border: 2px solid #BB99DD;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 120px;
-    margin-bottom: 16px;
-}
-
-#user-avatar {
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
+    border: 2px solid #BB99DD;
+    background-color: white;
 }
 
-span {
-    color: #BB99DD;
-    font-size: 16px;
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+main>#container-img>div>img {
+    border-radius: 50%;
+    max-width: 200px;
 }
 
-.container-list {
+main>#container-img>span {
+    font-size: 1rem;
+}
+
+main>#container-link {
     display: flex;
-}
-
-.type-column {
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    margin-bottom: 4.25rem;
+
 }
 
-.type-row {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 230px;
-    margin-top: 52px;
+main>#container-link>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
-.link {
+main>#container-link>ul>li>a {
     border: 2px solid #BB99DD;
     color: #BB99DD;
-    padding: 12px 139px;
-    margin-bottom: 16px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    padding: 0.75rem 8.75rem;
+    border-radius: 4px;
 }
 
-li {
+main>#container-icons-links>ul {
     display: flex;
+    gap: 1.813rem;
 }
 
-a:link,
-a:visited {
-    color: #BB99DD;
+@media (max-width: 400px) {
+
+    main>#container-link>ul>li>a {
+        padding: 0.75rem 6.75rem;
+    }
+}
+
+@media (max-width: 300px) {
+    main {
+        margin: 4rem 0;
+    }
+
+    main>#container-img {
+        justify-content: center;
+        align-items: center;
+    }
+
+    main>#container-img>div {
+        display: flex;
+        border-radius: 100%;
+        width: 160px;
+        height: 160px;
+    }
+
+    main>#container-img>div>img {
+        border-radius: 50%;
+        max-width: 150px;
+    }
+
+    main>#container-link>ul>li>a {
+        padding: 0.75rem 3.75rem;
+    }
 }
