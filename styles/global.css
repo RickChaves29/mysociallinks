@@ -1,5 +1,10 @@
+:root {
+    --backgroud-color: #FAF7FD;
+    --text-color: #BB99DD;
+}
+
 body {
-    background-color: #E5E5E5;
+    background-color: var(--backgroud-color);
 }
 
 main {
@@ -9,7 +14,7 @@ main {
     align-items: center;
     height: 100vh;
     text-align: center;
-    color: #BB99DD;
+    color: var(--text-color);
 }
 
 main>#container-img {
@@ -25,13 +30,14 @@ main>#container-img>div {
     padding: 6px;
     align-items: center;
     border-radius: 50%;
-    border: 2px solid #BB99DD;
-    background-color: white;
+    border: 2px solid var(--text-color);
+    background-color: var(--backgroud-color);
 }
 
 main>#container-img>div>img {
     border-radius: 50%;
     max-width: 200px;
+    max-height: 200px;
 }
 
 main>#container-img>span {
@@ -52,8 +58,8 @@ main>#container-link>ul {
 }
 
 main>#container-link>ul>li>a {
-    border: 2px solid #BB99DD;
-    color: #BB99DD;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
     padding: 0.75rem 8.75rem;
     border-radius: 4px;
 }
