@@ -7,5 +7,5 @@ User-agent: googlebot-mobile
 Disallow: 
 User-agent: *
 Disallow: 
-Disallow: /cgi-bin/
+Disallow: /
 Sitemap: https://rickchaves29.github.io/mysociallinks/sitemap.xml
