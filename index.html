@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello, I'm Henrique Chaves in this place are my social media links">
+    <meta name="keywords" content="RickChaves29, Henrique Chaves, mysociallinks, developer, freelancer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
@@ -15,10 +17,17 @@
 </head>
 
 <body>
+    <header>
+        <div>
+            <input id="btn-change-theme" type="button">
+            <img src="./assets/moon.svg" alt="image represent moon for theme dark">
+            <img src="./assets/sun.svg" alt="image represent moon for theme light">
+        </div>
+    </header>
     <main>
         <section id="container-img">
             <div>
-                <img src="https://avatars.githubusercontent.com/u/86691028?v=4" alt="Avatar user">
+                <img src="./assets/photo-room.jpg" alt="Avatar user">
             </div>
             <span>@senhorhenrique_oficial</span>
         </section>
@@ -33,22 +42,26 @@
             <ul>
                 <li>
                     <a href="https://www.instagram.com/senhorhenrique_oficial/" target="_blank">
-                        <img src="./assets/instagram.png" alt="icon intagram">
+                        <img src="./assets/instagram.svg" alt="icon intagram">
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/RickChaves29" target="_blank">
-                        <img src="./assets/github.png" alt="icon github">
+                        <img src="./assets/github.svg" alt="icon github">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/developer-henrique-chaves/" target="_blank">
-                        <img src="./assets/linkedin.png" alt="icon linkedin">
+                        <img src="./assets/linkedin.svg" alt="icon linkedin">
                     </a>
                 </li>
             </ul>
         </section>
     </main>
+    <script src="./js/theme.js"></script>
+    <script>
+        document.documentElement.lang = navigator.language
+    </script>
 </body>
 
 </html>

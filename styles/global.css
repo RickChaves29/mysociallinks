@@ -1,10 +1,54 @@
 :root {
     --backgroud-color: #FAF7FD;
     --text-color: #BB99DD;
+    --container-btn-color: #000000;
+    --btn-color: #F1F1F1;
 }
 
 body {
     background-color: var(--backgroud-color);
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    padding: 20px;
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--container-btn-color);
+    width: 120px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    position: relative;
+}
+
+header>div>#btn-change-theme {
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--btn-color);
+    border: none;
+}
+
+header>div>img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+@media (max-width: 300px) {
+    header>div {
+        width: 110px;
+        gap: 30px;
+    }
 }
 
 main {
@@ -12,9 +56,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: center;
     color: var(--text-color);
+    height: 100vh;
 }
 
 main>#container-img {
@@ -38,6 +82,9 @@ main>#container-img>div>img {
     border-radius: 50%;
     max-width: 200px;
     max-height: 200px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 main>#container-img>span {
@@ -69,6 +116,11 @@ main>#container-icons-links>ul {
     gap: 1.813rem;
 }
 
+main>#container-icons-links>ul>li>a>img {
+    width: 24px;
+    height: 24px;
+}
+
 @media (max-width: 400px) {
 
     main>#container-link>ul>li>a {
@@ -77,8 +129,14 @@ main>#container-icons-links>ul {
 }
 
 @media (max-width: 300px) {
-    main {
-        margin: 4rem 0;
+    header>div>#btn-change-theme {
+        width: 30px;
+        height: 30px;
+    }
+
+    header>div>img {
+        max-width: 30px;
+        max-height: 30px;
     }
 
     main>#container-img {
@@ -89,13 +147,15 @@ main>#container-icons-links>ul {
     main>#container-img>div {
         display: flex;
         border-radius: 100%;
-        width: 160px;
-        height: 160px;
+        width: 140px;
+        height: 140px;
     }
 
     main>#container-img>div>img {
         border-radius: 50%;
-        max-width: 150px;
+        max-width: 130px;
+        max-height: 130px;
+        object-fit: cover;
     }
 
     main>#container-link>ul>li>a {
